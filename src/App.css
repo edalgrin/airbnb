@@ -1,42 +1,107 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+body, #root {
+  @apply text-gray-700 bg-white dark:bg-gray-800 dark:text-white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+button {
+  @apply cursor-pointer;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+a {
+  @apply hover:underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@layer components {
+  .container-7xl {
+    @apply max-w-7xl px-3 mx-auto;
+  }
+
+  .btn-1,
+  .btn-2 {
+    @apply duration-300 ease-in-out;
+  }
+
+  .btn-1 {
+    @apply bg-rose-500 text-white hover:bg-rose-600;
+  }
+
+  .btn-2 {
+    @apply bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700;
+  }
+
+  .card {
+    @apply duration-300;
+    transition-delay: var(--delay, 0);
+  }
+
+  .loading .card {
+    @apply translate-y-10 opacity-0;
+  }
+
+  .favorite {
+    clip-path: polygon(19% 0, 81% 0, 100% 100%, 0 100%);
   }
 }
 
-.card {
-  padding: 2em;
+@utility hidden-onscroll {
+  animation: hidden-onscroll auto linear forwards;
+  animation-timeline: --page-scroll;
 }
 
-.read-the-docs {
-  color: #888;
+@utility block-onscroll {
+  @apply absolute opacity-0;
+  animation: block-onscroll auto linear forwards;
+  animation-timeline: --page-scroll;
+}
+
+@utility shadow-onscroll {
+  animation: shadow-onscroll auto linear forwards;
+  animation-timeline: --page-scroll;
+}
+
+@layer utilities {
+  html {
+    scroll-timeline: --page-scroll block;
+  }
+
+  @keyframes hidden-onscroll {
+
+    0.1%,
+    100% {
+      display: none;
+    }
+  }
+
+  @keyframes block-onscroll {
+    0% {
+      position: initial;
+      display: none;
+      opacity: 0;
+    }
+
+    0.1%,
+    100% {
+      position: initial;
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadow-onscroll {
+
+    0.1%,
+    100% {
+      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)),
+        0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+        var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
 }

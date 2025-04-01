@@ -1,0 +1,101 @@
+[
+  {
+    "tabTitle": "Popular",
+    "tabContent": [
+      {
+        "subtabTitle": "Canmore",
+        "subtabContent": "Condo rentals",
+        "subtabUrl": "#Canmore"
+      },
+      {
+        "subtabTitle": "Benalmádena",
+        "subtabContent": "Apartment rentals",
+        "subtabUrl": "#Benalmádena"
+      },
+      {
+        "subtabTitle": "Marbella",
+        "subtabContent": "Apartment rentals",
+        "subtabUrl": "#Marbella"
+      },
+      {
+        "subtabTitle": "Mijas",
+        "subtabContent": "Apartment rentals",
+        "subtabUrl": "#Mijas"
+      },
+      {
+        "subtabTitle": "Prescott",
+        "subtabContent": "Cabin rentals",
+        "subtabUrl": "#Prescott"
+      },
+      {
+        "subtabTitle": "Scottsdale",
+        "subtabContent": "Apartment rentals",
+        "subtabUrl": "#Scottsdale"
+      },
+      {
+        "subtabTitle": "Tucson",
+        "subtabContent": "Pet-friendly rentals",
+        "subtabUrl": "#Tucson"
+      },
+      {
+        "subtabTitle": "Jasper",
+        "subtabContent": "Cabin rentals",
+        "subtabUrl": "#Jasper"
+      },
+      {
+        "subtabTitle": "Mountain View",
+        "subtabContent": "Family-friendly rentals",
+        "subtabUrl": "#Mountain"
+      },
+      {
+        "subtabTitle": "Devonport",
+        "subtabContent": "Cottage rentals",
+        "subtabUrl": "#Devonport"
+      },
+      {
+        "subtabTitle": "Mallacoota",
+        "subtabContent": "Beach house rentals",
+        "subtabUrl": "#Mallacoota"
+      },
+      {
+        "subtabTitle": "Ibiza",
+        "subtabContent": "Vacation rentals",
+        "subtabUrl": "#Ibiza"
+      },
+      {
+        "subtabTitle": "Anaheim",
+        "subtabContent": "Condo rentals",
+        "subtabUrl": "#Anaheim"
+      },
+      {
+        "subtabTitle": "Monterey",
+        "subtabContent": "Cottage rentals",
+        "subtabUrl": "#Monterey"
+      },
+      {
+        "subtabTitle": "Paso Robles",
+        "subtabContent": "Cottage rentals",
+        "subtabUrl": "#Paso"
+      },
+      {
+        "subtabTitle": "Santa Barbara",
+        "subtabContent": "Beach house rentals",
+        "subtabUrl": "#Santa"
+      },
+      {
+        "subtabTitle": "Sonoma",
+        "subtabContent": "Cottage rentals",
+        "subtabUrl": "#Sonoma"
+      }
+    ]
+  },
+  { "tabTitle": "Arts & Culture", "tabContent": [] },
+  { "tabTitle": "Outdoors", "tabContent": [] },
+  { "tabTitle": "Mountain", "tabContent": [] },
+  { "tabTitle": "Beach", "tabContent": [] },
+  { "tabTitle": "Unique stays", "tabContent": [] },
+  { "tabTitle": "Categories", "tabContent": [] },
+  { "tabTitle": "Things to do", "tabContent": [] },
+  { "tabTitle": "Travel tips & inspiration", "tabContent": [] },
+  { "tabTitle": "Airbnb-friendly apartments", "tabContent": [] }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Support",
+    "links": [
+      { "label": "Help Center", "url": "#Help" },
+      { "label": "AirCover", "url": "#AirCover" },
+      { "label": "Anti-discrimination", "url": "#Anti" },
+      { "label": "Disability support", "url": "#Disability" },
+      { "label": "Cancellation options", "url": "#Cancellation" },
+      { "label": "Report a neighborhood concern", "url": "#Report" }
+    ]
+  },
+  {
+    "category": "Hosting",
+    "links": [
+      { "label": "Airbnb your home", "url": "#Airbnb" },
+      { "label": "AirCover for Hosts", "url": "#AirCover" },
+      { "label": "Hosting resources", "url": "#Hosting" },
+      { "label": "Community forum", "url": "#Community" },
+      { "label": "Hosting responsibly", "url": "#Hosting" },
+      { "label": "Airbnb-friendly apartments", "url": "#Airbnb-friendly" },
+      { "label": "Join a free Hosting class", "url": "#Join" },
+      { "label": "Find a co‑host", "url": "#Find" }
+    ]
+  },
+  {
+    "category": "Airbnb",
+    "links": [
+      { "label": "Newsroom", "url": "#Newsroom" },
+      { "label": "New features", "url": "#New" },
+      { "label": "Careers", "url": "#Careers" },
+      { "label": "Investors", "url": "#Investors" },
+      { "label": "Gift houses", "url": "#Gift" },
+      { "label": "Airbnb.org emergency stays", "url": "#Airbnb.org" }
+    ]
+  }
+]
