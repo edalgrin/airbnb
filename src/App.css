@@ -24,7 +24,8 @@ a {
   }
 
   .btn-1,
-  .btn-2 {
+  .btn-2,
+  .btn-3 {
     @apply duration-300 ease-in-out;
   }
 
@@ -34,6 +35,10 @@ a {
 
   .btn-2 {
     @apply bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700;
+  }
+
+  .btn-3 {
+    @apply hover:bg-gray-200
   }
 
   .card {

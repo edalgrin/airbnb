@@ -55,7 +55,7 @@ const Header = ({ handleCategoryChange }) => {
     <header className="shadow-onscroll fixed top-0 inset-x-0 bg-inherit z-2 ">
       <section className="container-7xl flex items-center justify-between py-3 lg:py-6 gap-1 sm:gap-4">
         <a href="#home" className="flex-grow-1 md:flex-grow-0 lg:pr-30">
-          <h1 className="text-2xl font-bold text-rose-500 flex gap-2">
+          <h1 className="text-2xl font-bold text-rose-500 flex p-1 gap-2">
             <span aria-hidden="true">/\</span>
             <span>airbnb</span>
           </h1>
@@ -98,8 +98,9 @@ const Header = ({ handleCategoryChange }) => {
             {["Homes", "Experiences"].map((item, i) => (
               <button
                 key={i}
-                className={classNames("px-4 py-2", {
+                className={classNames("px-4 py-2 rounded-md", {
                   "font-bold": i == 0,
+                  "btn-3": i != 0,
                 })}
                 onClick={(e) => {
                   handleTypeClick(e);

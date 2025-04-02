@@ -115,7 +115,7 @@ const Card = ({
               onClick={() => {
                 handleSlideClick();
               }}
-              className="btn-2 rounded-full p-2 text-xl absolute top-[33%] left-3 opacity-0"
+              className="btn-2 rounded-full p-3 text-xl absolute top-[33%] left-3 opacity-0"
             >
               <IoArrowBack aria-hidden="true" />
             </button>
@@ -125,7 +125,7 @@ const Card = ({
               onClick={() => {
                 handleSlideClick();
               }}
-              className="btn-2 rounded-full p-2 text-xl absolute top-[33%] right-3 opacity-0 group-hover:opacity-100 focus:opacity-100 duration-300 ease-in-out"
+              className="btn-2 rounded-full p-3 text-xl absolute top-[33%] right-3 opacity-0 group-hover:opacity-100 focus:opacity-100 duration-300 ease-in-out"
             >
               <IoArrowForward aria-hidden="true" />
             </button>

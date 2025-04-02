@@ -48,7 +48,7 @@ const Footer = () => {
             <li>
               <button
                 aria-label="Open language menu"
-                className="flex items-center px-3 py-2 gap-2"
+                className="btn-3 rounded-md flex items-center px-3 py-2 gap-2"
                 onClick={() => handleLanguageClick()}
               >
                 <IoGlobeOutline aria-hidden="false" />
@@ -58,7 +58,7 @@ const Footer = () => {
             <li>
               <button
                 aria-label="Open currency menu"
-                className="flex items-center px-3 py-2 gap-2"
+                className="btn-3 rounded-md flex items-center px-3 py-2 gap-2"
                 onClick={() => handleCurrencyClick()}
               >
                 <span aria-hidden="true">€ EUR</span>
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                className="block p-1 text-2xl"
+                className="btn-3 rounded-md block p-1 text-2xl"
                 href="#facebook"
                 aria-label="Facebook"
               >
@@ -75,7 +75,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                className="block p-1 text-2xl"
+                className="btn-3 rounded-md block p-1 text-2xl"
                 href="#twitter"
                 aria-label="Twitter"
               >
@@ -84,7 +84,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                className="block p-1 text-2xl"
+                className="btn-3 rounded-md block p-1 text-2xl"
                 href="#instagram"
                 aria-label="Instagram"
               >
