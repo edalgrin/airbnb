@@ -1,3 +1,4 @@
+import { useState } from "react";
 import classNames from "classnames";
 import {
   IoHomeOutline,
@@ -34,12 +35,6 @@ const handleFormSubmit = (e) => {
   alert("Search");
 };
 
-const handleCategoryClick = (e) => {
-  if (!e.target.classList.contains("after:border-b-2")) {
-    alert(`Change to ${e.target.innerText}`);
-  }
-};
-
 const handleFilterClick = () => {
   alert("Open Filter Menu");
 };
@@ -48,7 +43,14 @@ const handleCarouselClick = () => {
   alert("Slide the carousel to show more options");
 };
 
-const Header = () => {
+const Header = ({ handleCategoryChange }) => {
+  const [activeCategory, setActiveCategory] = useState(0);
+
+  const handleCategoryClick = (index) => {
+    setActiveCategory(index);
+    handleCategoryChange();
+  };
+
   return (
     <header className="shadow-onscroll fixed top-0 inset-x-0 bg-inherit z-2 ">
       <section className="container-7xl flex items-center justify-between py-3 lg:py-6 gap-1 sm:gap-4">
@@ -200,15 +202,14 @@ const Header = () => {
                 <li key={index} className="shrink-0">
                   <button
                     tabIndex={index == 0 ? "0" : "-1"}
-                    onClick={(e) => {
-                      handleCategoryClick(e);
+                    onClick={() => {
+                      handleCategoryClick(index);
                     }}
                     className={classNames(
                       "flex flex-col items-center gap-2 min-w-15 sm:min-w-30 py-3 lg:py-5 relative after:absolute after:inset-x-10 after:bottom-3 after:content-[''] after:border-b-2",
-                      { "": index == 0 },
                       {
                         "text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 after:scale-x-0 hover:after:scale-x-100 after:duration-300 after:ease-in-out after:border-gray-400":
-                          index != 0,
+                          activeCategory != index,
                       }
                     )}
                   >

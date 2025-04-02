@@ -130,6 +130,17 @@ function App() {
   const [houses, setHouses] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const handleCategoryChange = () => {
+    setLoading(true);
+    setHouses([]);
+    setTimeout(() => {
+      setHouses(getRandomHouse([], 8));
+    }, 100);
+    setTimeout(() => {
+      setLoading(false);
+    }, 200);
+  };
+
   useEffect(() => {
     setHouses(getRandomHouse(houses, 8));
 
@@ -145,7 +156,7 @@ function App() {
           Skip to content
         </a>
       </div>
-      <Header />
+      <Header handleCategoryChange={handleCategoryChange} />
 
       <main id="content" className={classNames({ loading: loading })}>
         <section className="container-7xl mt-40 lg:mt-70 mb-10">
