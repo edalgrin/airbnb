@@ -76,6 +76,10 @@ a {
     scroll-timeline: --page-scroll block;
   }
 
+  .scrollbar-hidden {
+    scrollbar-width: none;
+  }
+
   @keyframes hidden-onscroll {
 
     0.1%,

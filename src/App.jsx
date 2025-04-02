@@ -199,7 +199,7 @@ function App() {
               Inspiration for future getaways
             </h2>
 
-            <nav className="mt-4 flex items-center gap-3">
+            <nav className="mt-4 flex items-center gap-3 overflow-x-hidden snap-x snap-mandatory">
               <button
                 aria-label=""
                 onClick={() => {
@@ -213,7 +213,7 @@ function App() {
               <ul
                 role="tablist"
                 aria-label="Destinations"
-                className="flex border-b border-gray-300 overflow-x-hidden"
+                className="flex border-b border-gray-300 overflow-x-auto snap-center scrollbar-hidden"
               >
                 {navDestinations.map((tab, index) => (
                   <li key={index} role="none" className="shrink-0">

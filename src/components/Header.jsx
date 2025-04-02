@@ -197,8 +197,8 @@ const Header = ({ handleCategoryChange }) => {
             <IoArrowBack aria-hidden="true" />
           </button>
 
-          <nav className="overflow-x-hidden">
-            <ul className="flex items-center">
+          <nav className="overflow-x-hidden snap-x snap-mandatory ">
+            <ul id="categories" className="flex items-center overflow-x-auto snap-center scrollbar-hidden">
               {navCategories.map((category, index) => (
                 <li key={index} className="shrink-0">
                   <button
@@ -207,7 +207,7 @@ const Header = ({ handleCategoryChange }) => {
                       handleCategoryClick(index);
                     }}
                     className={classNames(
-                      "flex flex-col items-center gap-2 min-w-15 sm:min-w-30 py-3 lg:py-5 relative after:absolute after:inset-x-10 after:bottom-3 after:content-[''] after:border-b-2",
+                      "flex flex-col items-center gap-2 min-w-15 sm:min-w-30 py-3 lg:py-4 rounded-md relative after:absolute after:inset-x-10 after:bottom-3 after:content-[''] after:border-b-2",
                       {
                         "text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 after:scale-x-0 hover:after:scale-x-100 after:duration-300 after:ease-in-out after:border-gray-400":
                           activeCategory != index,
