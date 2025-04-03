@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [tailwindcss(), react()],
   base: "./",
   build: {
+    minify: true,
     outDir: "./docs",
     emptyOutDir: true,
   },

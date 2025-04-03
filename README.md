@@ -9,6 +9,6 @@ Key Features:
 - ✅ UX Best Practices – Intuitive navigation, clear visual hierarchy, and smooth interactions inspired by Airbnb’s real-world usability.
 - ✅ Modern Technologies – Built with React, Tailwind CSS, and optimized for SEO and Core Web Vitals.
 
-This PoC website preserves the original structure and content type. Since it's a demo, I prioritized performance, accessibility, architecture, and maintainability over full functionality implementation.
+This PoC website preserves the original structure and content type. Since **it's a demo**, I prioritized performance, accessibility, architecture, and maintainability over full functionality implementation.
 
-[Live Demo](https://edalgrin.github.com/airbnb)
+[Live Demo ![image info](./public/screenshot.jpg)](https://edalgrin.github.com/airbnb)
