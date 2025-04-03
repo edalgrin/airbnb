@@ -13,6 +13,6 @@ This PoC website preserves the original structure and content type. Since **it's
 
 ![Lighthouse](./images/lighthouse.jpg)
 
-[Live Demo](https://edalgrin.github.com/airbnb)
+[Live Demo](https://edalgrin.github.io/airbnb)
 
-[![Screenshot of the page](./images/screenshot.jpg)](https://edalgrin.github.com/airbnb)
+[![Screenshot of the page](./images/screenshot.jpg)](https://edalgrin.github.io/airbnb)
