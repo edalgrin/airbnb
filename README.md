@@ -1,12 +1,14 @@
-# React + Vite
+# Airbnb UX PoC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and high-performance recreation of the Airbnb home page, built to showcase expertise in Frontend UX Engineering.
 
-Currently, two official plugins are available:
+Key Features:
+- ✅ Responsive Design – Seamlessly adapts to all screen sizes, ensuring a smooth experience across mobile, tablet, and desktop devices.
+- ✅ Accessibility (a11y) – Follows WCAG guidelines, providing an inclusive experience with proper semantic HTML, ARIA attributes, and keyboard navigation.
+- ✅ Performance Optimization – Efficient asset loading, lazy loading images, and minimized render-blocking resources for a fast and fluid experience.
+- ✅ UX Best Practices – Intuitive navigation, clear visual hierarchy, and smooth interactions inspired by Airbnb’s real-world usability.
+- ✅ Modern Technologies – Built with React, Tailwind CSS, and optimized for SEO and Core Web Vitals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This PoC website preserves the original structure and content type. Since it's a demo, I prioritized performance, accessibility, architecture, and maintainability over full functionality implementation.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Live Demo](https://edalgrin.github.com/airbnb)
