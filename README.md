@@ -11,4 +11,8 @@ Key Features:
 
 This PoC website preserves the original structure and content type. Since **it's a demo**, I prioritized performance, accessibility, architecture, and maintainability over full functionality implementation.
 
-[Live Demo ![image info](./public/screenshot.jpg)](https://edalgrin.github.com/airbnb)
+![Lighthouse](./images/lighthouse.jpg)
+
+[Live Demo](https://edalgrin.github.com/airbnb)
+
+[![Screenshot of the page](./images/screenshot.jpg)](https://edalgrin.github.com/airbnb)
