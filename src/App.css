@@ -38,7 +38,7 @@ a {
   }
 
   .btn-3 {
-    @apply hover:bg-gray-200
+    @apply hover:bg-gray-200 dark:hover:bg-gray-900;
   }
 
   .card {
