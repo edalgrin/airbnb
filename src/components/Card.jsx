@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import classNames from "classnames";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   IoStar,
   IoHeart,
@@ -70,18 +69,15 @@ const Card = ({
         )}
       </div>
       <div className="aspect-square overflow-hidden">
-        {images.map((image, index) => {
-          const imgProps = {
-            className: classNames("rounded-xl w-full", { hidden: index != 0 }),
-            width: 300,
-            height: 300,
-            src: `${image}/300.jpg`,
-            placeholderSrc: `${image}/10.jpg`,
-            wrapperClassName: "w-full! h-auto!",
-            alt: "",
-          };
-          return <LazyLoadImage key={index} {...imgProps} />;
-        })}
+        {images.map((image, index) => (
+          <img
+            key={index}
+            alt=""
+            src={`${image}/300.jpg`}
+            loading="lazy"
+            className={classNames("rounded-xl w-full", { hidden: index != 0 })}
+          />
+        ))}
       </div>
       <div className="flex justify-between items-center gap-3 mt-2">
         <div className="font-semibold">{title}</div>

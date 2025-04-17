@@ -81,7 +81,9 @@ const getRandomHouse = (houses, n) => {
     const images = [];
 
     for (let j = 0; j < Math.ceil(Math.random() * 3); j++) {
-      images.push(`https://picsum.photos/id/${Math.ceil(Math.random() * 201)}`);
+      const imageId = Math.ceil(Math.random() * 201);
+      if 
+      images.push(`https://picsum.photos/id/${imageId}`);
     }
 
     newHouses.push({
