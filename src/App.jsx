@@ -73,6 +73,8 @@ const getRandomHouse = (houses, n) => {
 
   const newHouses = [...houses];
 
+  const missingHouses = [86, 97, 105, 138, 148, 150];
+
   for (let i = 0; i < n; i++) {
     const dateTwo = Math.ceil(Math.random() * 21);
 
@@ -81,8 +83,12 @@ const getRandomHouse = (houses, n) => {
     const images = [];
 
     for (let j = 0; j < Math.ceil(Math.random() * 3); j++) {
-      const imageId = Math.ceil(Math.random() * 201);
-      if 
+      let imageId = Math.ceil(Math.random() * 201);
+
+      while (missingHouses.includes(imageId)) {
+        imageId = Math.ceil(Math.random() * 201);
+      }
+
       images.push(`https://picsum.photos/id/${imageId}`);
     }
 

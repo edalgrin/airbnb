@@ -95,7 +95,7 @@ const Card = ({
       <a
         href={`#more${id}`}
         aria-label="View more"
-        className="group rounded-lg before:absolute before:inset-0 before:rounded-xl before:content-['']"
+        className="hidden group rounded-lg before:absolute before:inset-0 before:rounded-xl before:content-['']"
       >
         <span
           aria-hidden="true"
