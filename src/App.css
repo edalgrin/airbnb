@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-body, #root {
+body,
+#root {
   @apply text-gray-700 bg-white dark:bg-gray-800 dark:text-white;
 }
 
@@ -52,6 +53,21 @@ a {
 
   .favorite {
     clip-path: polygon(19% 0, 81% 0, 100% 100%, 0 100%);
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  .embla__prev,
+  .embla__next {
+    @apply rounded-full p-3 text-xl absolute top-[33%] opacity-0 hover:opacity-100 focus:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100
+  }
+  .embla__prev {
+    @apply left-3;
+  }
+  .embla__next {
+    @apply right-3;
   }
 }
 
